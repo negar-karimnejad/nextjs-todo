@@ -8,6 +8,7 @@ export async function create(prevState: any,formData:FormData) {
     
 try {
     const input =formData.get("input") as string
+    if(!input){throw new Error("Input is empty")}
 
     await prisma.todo.create({
         data:{
@@ -18,7 +19,7 @@ try {
     revalidatePath("/")
     
 } catch (error) {
-    return "Faild to create"
+    return "Faild to create."
 }
     
 }

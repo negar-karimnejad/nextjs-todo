@@ -14,7 +14,7 @@ export default function FormElem() {
     return (
       <button
         type="submit"
-        className="p-2 px-7 bg-emerald-700 rounded-md transition-all hover:bg-emerald-600"
+        className="p-2 px-7 text-white bg-emerald-700 rounded-md transition-all hover:bg-emerald-600"
       >
         {pending ? <Loader className="w-5 h-5 animate-spin" /> : "Add"}
       </button>
@@ -28,13 +28,13 @@ export default function FormElem() {
           formRef.current?.reset();
         }}
         ref={formRef}
-        className="m-auto flex gap-2"
+        className="m-auto flex gap-2 "
       >
         <input
           type="text"
           name="input"
           placeholder="Enter your task"
-          className="autofill:select-transparent outline-none bg-gray-700 rounded-md p-2"
+          className="outline-none bg-gray-700 rounded-md p-2 text-white"
         />
         <SubmitButton />
       </form>

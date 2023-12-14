@@ -8,7 +8,7 @@ export default function DeleteButton() {
   return (
     <button
       type="submit"
-      className="bg-gray-700 rounded-full w-9 h-9 p-2 ml-1 transition-all hover:text-red-500"
+      className="bg-gray-700 text-white rounded-full w-9 h-9 p-2 ml-1 transition-all hover:text-red-500"
     >
       {pending ? (
         <Loader className="w-5 h-5 text-red-500 animate-spin" />

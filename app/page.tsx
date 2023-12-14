@@ -1,5 +1,4 @@
 import { deleteTodo, editTodo } from "./actions";
-import DarkModeButton from "./components/DarkModeButton";
 import DeleteButton from "./components/DeleteButton";
 import EditButton from "./components/EditButton";
 import FormElem from "./components/Form";
@@ -22,22 +21,19 @@ export default async function Home() {
   const data = await getData();
 
   return (
-    <div className="relative flex w-screen h-screen justify-center items-center dark:bg-black">
-      <div className="absolute right-0 top-0">
-        <DarkModeButton />
-      </div>
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="bg-gradient-to-r from-emerald-500 via-emerald-500 to-emerald-200 inline-block text-transparent bg-clip-text text-4xl font-bold mb-10 text-center">
+    <div className="relative flex w-screen h-screen justify-center items-center">
+      <div className="flex flex-col justify-center items-center shadow-2xl border rounded-lg px-5 py-4 dark:shadow-none dark:border-0">
+        <h1 className="bg-gradient-to-r from-emerald-500 via-emerald-500 to-emerald-300 inline-block text-transparent bg-clip-text text-4xl font-bold mb-10 text-center">
           Todo list
         </h1>
         <FormElem />
         <div className="mt-10">
           {data?.map((todo) => (
-            <div className=" flex justify-center items-center border border-r-0 border-l-0 border-t-0 border-slate-700 my-2 px-4 py-2">
+            <div className=" flex justify-center items-center border border-r-0 border-l-0 border-t-0 border-slate-300 dark:border-slate-700 my-2 px-4 py-2">
               <form
                 key={todo.id}
                 action={editTodo}
-                className="flex justify-between items-center gap-10"
+                className="flex justify-between items-center gap-10 text-gray-800 dark:text-white"
               >
                 <input
                   name="todoId"
@@ -48,7 +44,7 @@ export default async function Home() {
                 <input
                   type="text"
                   name="input"
-                  className="w-full bg-transparent text-white outline-none"
+                  className="w-full bg-transparent outline-none font-bold"
                   defaultValue={todo.input}
                 />
                 <EditButton />

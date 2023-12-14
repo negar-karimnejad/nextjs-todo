@@ -16,13 +16,8 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background:rgb(27, 31, 45)
-}
-
 @layer base{
   body {
-      @apply dark:bg-gray-800 bg-white
+      @apply dark:bg-gray-800 bg-white text-gray-900 dark:text-white
   }
 }

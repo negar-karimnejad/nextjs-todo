@@ -9,7 +9,7 @@ export default function EditButton() {
   return (
     <button
       type="submit"
-      className="bg-gray-700 rounded-full w-9 h-9 p-2 transition-all hover:text-green-500"
+      className="text-white bg-gray-700 rounded-full w-9 h-9 p-2 transition-all hover:text-green-500"
     >
       {pending ? (
         <Loader className="w-5 h-5 text-green-400 animate-spin" />
