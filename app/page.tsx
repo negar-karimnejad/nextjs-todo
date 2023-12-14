@@ -22,7 +22,7 @@ export default async function Home() {
 
   return (
     <div className="relative flex w-screen h-screen justify-center items-center">
-      <div className="flex flex-col justify-center items-center shadow-2xl border rounded-lg px-5 py-4 dark:shadow-none dark:border-0 mx-20 sm:mx-0">
+      <div className="flex flex-col justify-center items-center shadow-2xl border rounded-lg sm:px-5 py-4 w-[370px] sm:w-auto dark:shadow-none dark:border-0">
         <h1 className="bg-gradient-to-r from-emerald-500 via-emerald-500 to-emerald-300 inline-block text-transparent bg-clip-text text-4xl font-bold mb-10 text-center">
           Todo list
         </h1>
