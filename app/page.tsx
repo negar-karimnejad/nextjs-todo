@@ -33,7 +33,7 @@ export default async function Home() {
               <form
                 key={todo.id}
                 action={editTodo}
-                className="flex justify-between items-center gap-10 text-gray-800 dark:text-white"
+                className="flex justify-between items-center gap-10 text-gray-700 dark:text-white"
               >
                 <input
                   name="todoId"
@@ -41,12 +41,15 @@ export default async function Home() {
                   className="hidden"
                   value={todo.id}
                 />
-                <input
-                  type="text"
-                  name="input"
-                  className="w-full bg-transparent outline-none font-bold"
-                  defaultValue={todo.input}
-                />
+                <div className="flex gap-1">
+                  <span className="font-bold">-</span>
+                  <input
+                    type="text"
+                    name="input"
+                    className="w-full bg-transparent outline-none font-bold"
+                    defaultValue={todo.input}
+                  />
+                </div>
                 <EditButton />
               </form>
               <form action={deleteTodo}>
@@ -62,7 +65,9 @@ export default async function Home() {
           ))}
           {data.length === 0 && (
             <div className="flex justify-center items-center my-4 p-2 gap-10 border border-r-0 border-l-0 border-t-0 border-slate-700">
-              <p className="font-bold text-yellow-400">Todo list is empty!</p>
+              <p className="font-bold bg-yellow-400 px-5 py-1 text-gray-800 dark:text-yellow-400 dark:bg-transparent">
+                Todo list is empty!
+              </p>
             </div>
           )}
         </div>
