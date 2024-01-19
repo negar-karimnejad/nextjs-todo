@@ -9,9 +9,9 @@
 ### <p align="center">🔧Technologies:</p>
 <div align="center" >
   
-![npm](https://img.shields.io/badge/npm-eb5e28?style=for-the-badge&logo=npm&logoColor=white)
-![prisma](https://img.shields.io/badge/prisma-eb5e28?style=for-the-badge&logo=prisma&logoColor=white)
-![react](https://img.shields.io/badge/react-eb5e28?style=for-the-badge&logo=react&logoColor=white)
+![npm](https://img.shields.io/badge/npm-05A081?style=for-the-badge&logo=npm&logoColor=white)
+![prisma](https://img.shields.io/badge/prisma-05A081?style=for-the-badge&logo=prisma&logoColor=white)
+![react](https://img.shields.io/badge/react%20-05A081?style=for-the-badge&logo=react&logoColor=white)
 ![typescript](https://img.shields.io/badge/tepescript-05A081?style=for-the-badge&logo=typescript&logoColor=white)
 ![nextjs](https://img.shields.io/badge/next%20js-05A081?style=for-the-badge&logo=next.js&logoColor=white)
 ![tailwindcss](https://img.shields.io/badge/tailwindcss-05A081?style=for-the-badge&logo=tailwindcss&logoColor=white)
